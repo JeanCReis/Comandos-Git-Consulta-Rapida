@@ -1,0 +1,44 @@
+git init / transforma o diretorio em um repositorio git
+git ls-files /mostra quais arquivos estão sendo controlados
+git status / mostra o status atual do repositorio do git
+git add -nomeDoArquivo / monitorar tal arquivo
+git commit -m "comentario" / grava as alterações
+git config user.name -nome do usuario/ configura o nome do usuario 
+git config user.email -email do usuario/ configura o email do usuario
+git log / historico de commits realizados no repositorio
+git whatchanged /mostra o historico de alterações
+git whatchanged -p/mostra o que foi alterado
+git remote /mostra quais repositorios remotos possui
+git remote add origin -urlDoRepositorioRemoto / adicionar um repositorio remoto
+git push origin master / mandar alterações para o repositorio remoto origin para branch master
+git branch / lista as branchs do projeto na maquina
+git branch -r / lista as branch remotas
+git branch -nomeDabranch / cria uma nova branch
+git checkout -nomeDaBranch / mudar de branch
+git push -u origin -nomeDaBranch / faz com que o repositorio local seja igual ao remoto
+git pull / atualizar os dados do repositorio local para que fique de acordo com repositorio remoto
+git branch -t -nomeDaberanch origin/-nomeDaBranch / cria uma branch local e espelha na branch remota ja existente
+git pull origin master / autaliza o repositorio local de acordo com a branch do repositorio remoto
+git checkout -b desenvolvimento / cria branch e ja aponta para ela
+git merge nomeDaBranch tras os commits de uma branch para outra
+git rebase master desenvolvimento / atualiza uma branch com base em outra
+git rebase master --continue / continua a atualização da branch com base em outra
+git checkout -nomeDoArquivo / desfaz as alterações trazendo o arquivo para o estado do ultimo commit
+git reset HEAD -nomeDoArquivo / tira o arquivo do estado de ir para commit paea o anterior
+git reset -rashDoUltimoCommit / volta o commit atual para o commit selecionado pelo rash
+git revert rashDoCommitDesejado / desfaz as alterações do commit selecionado pelo rash 
+git stach / guarda as alterações que não foram comitadas
+git stach list / mostra lista de arquivos com alterações que foram quardadas
+git stach pop / pega o ultimo alteração na lista
+git stach apply -numeroDoStash / pego as alerações do arquivo especifo pelo numero do stach
+git stash drop / apaga o stash 
+git bisect start / iniciar uma busca de commits
+git bisect bad HEAD  /determina que o commit atual é ruim
+git bisect good -rachDoCommit / determina que esse commit é bom
+git bisect bad /determina que o commit selecionado é ruim
+git vim ~/.gitconfig [alias]
+git log --pretty=online / mostra um commit por linha
+git log --pretty=full / mostra os commits inclusive o do autor do primeiro commit desse arquivo
+git log -p / mostra detalhes do commit
+git cherry-pick -numeroDoStash / manda para master somente o commit selecionado
+git-cola /abre um terminal
